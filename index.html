@@ -1,71 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>PT Air Minum Murakata Lestari (Clone)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PTAM Murakata Lestari</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5faff;
+    }
+    header {
+      background: url('assets/header-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+      font-size: 24px;
+      background-color: rgba(0,0,0,0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+    nav {
+      background-color: #005999;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+    footer {
+      background-color: #003d66;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">[LOGO INTANBANJAR]</div>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami ▾</a>
-          <ul class="submenu">
-            <li><a href="#">Sejarah</a></li>
-            <li><a href="#">Visi & Misi</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Layanan ▾</a></li>
-        <li><a href="#">Informasi</a></li>
-        <li><a href="#">Galeri</a></li>
-      </ul>
-    </nav>
+    <img src="assets/logo.png" alt="Logo PTAM Murakata Lestari" />
+    <h1>PT Air Minum Murakata Lestari</h1>
   </header>
-
-  <section class="hero">
-    <h1>Mengedepankan Pengelolaan yang Tersehat, Unggul, Mandiri, dan Transparan</h1>
-    <div class="cek-tagihan">
-      <input type="text" id="pelanggan" placeholder="Masukan Nomor Pelanggan">
-      <button onclick="cekTagihan()">Cek Tagihan</button>
-    </div>
-  </section>
-
-  <section class="stats">
-    <div><strong id="stat-pelanggan">0</strong><p>Pelanggan</p></div>
-    <div><strong id="stat-outlet">0</strong><p>Outlet</p></div>
-    <div><strong id="stat-sumber">0</strong><p>Sumber Air</p></div>
-    <div><strong id="stat-project">0</strong><p>Projects</p></div>
-  </section>
-
-  <section class="layanan">
-    <h2>Layanan Kami</h2>
-    <ul>
-      <li>Info Tarif</li>
-      <li>Info Tagihan</li>
-      <li>Info Outlet</li>
-      <li>Customer Care</li>
-      <li>Tracking Pengaduan</li>
-      <li>Tracking Pemasangan Baru</li>
-    </ul>
-  </section>
-
-  <section class="galeri"><h2>Galeri Kami</h2><p>No Post Yet</p></section>
-
-  <section class="kabar">
-    <h2>Kabar Kami</h2>
-    <ul>
-      <li>Pengumuman Tender…</li>
-      <li>Bayar Tagihan Sekarang…</li>
-    </ul>
-  </section>
-
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Profil</a>
+    <a href="#">Cek Tagihan</a>
+    <a href="#">Kontak</a>
+  </nav>
+  <main>
+    <h2>Selamat datang di website resmi PTAM Murakata Lestari</h2>
+    <p>Pelayanan air bersih untuk masyarakat Hulu Sungai Tengah.</p>
+  </main>
   <footer>
-    <address>Jl. H. Mistar Cokrokusumo No.10, Barabai, Hulu Sungai Tengah, Kalimantan Selatan</address>
-    <p>© 2025 PT Air Minum Murakata Lestari (Perseroda)</p>
+    &copy; 2025 PTAM Murakata Lestari. All rights reserved.
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
